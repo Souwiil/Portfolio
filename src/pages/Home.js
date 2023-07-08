@@ -18,7 +18,7 @@ const Home = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] font-bold font-space leading-[0.8] lg:text-[110px]"
+              className="text-[55px] font-bold font-space leading-[0.8] lg:text-[110px] mb-2"
             >
               Souhail <span>Barktou</span>
             </motion.h1>

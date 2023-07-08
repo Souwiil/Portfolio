@@ -49,10 +49,7 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const rotateX = useTransform(y, [-100, 100], [30, -30])
-  const rotateY = useTransform(x, [-100, 100], [-30, 30])
+ 
 
   return (
     <motion.div
@@ -61,12 +58,8 @@ const ProjectCard = ({
       whileInView={"show"}
       className="mb-16"
     >
-      <motion.div
-        style={{ x, y, rotateX, rotateY, z: 100 }}
-        drag
-        dragElastic={0.18}
-        dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
-        className="bg-zinc-800 dark:bg-zinc-300 p-5 h-[500px] rounded-2xl lg:w-[360px]  lg:mx-0 w-full cursor-grab ">
+      <div
+        className="bg-zinc-800 dark:bg-zinc-300 p-5 h-[500px] rounded-2xl lg:w-[360px]  lg:mx-0 w-full cursor-pointer ">
         <div className="relative w-full h-[200px]">
           <img
             src={image}
@@ -100,7 +93,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </motion.div>
+      </div>
     </motion.div>
   );
 };
