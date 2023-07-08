@@ -31,7 +31,7 @@ const Works = () => {
           </motion.p>
         </div>
 
-        <div className="mt-6 flex flex-wrap gap-7 lg:flex lg:justify-center mb-12 ">
+        <div className="mt-4 flex flex-wrap gap-7 lg:flex lg:justify-center mb-12 ">
           {projects && projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}
@@ -59,7 +59,7 @@ const ProjectCard = ({
       className="mb-16"
     >
       <div
-        className="bg-zinc-800 dark:bg-zinc-300 p-5 h-[500px] rounded-2xl lg:w-[360px]  lg:mx-0 w-full cursor-pointer ">
+        className="bg-zinc-800 dark:bg-zinc-300 p-5 h-[520px] rounded-2xl lg:w-[360px]  lg:mx-0 w-full cursor-pointer ">
         <div className="relative w-full h-[200px]">
           <img
             src={image}
@@ -77,12 +77,12 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-4">
           <h3 className="text-zinc-200 dark:text-zinc-900 font-bold  text-3xl">{name}</h3>
-          <p className="mt-2 text-secondary text-base font-mono text-zinc-200 dark:text-zinc-900">{description}</p>
+          <p className="mt-1 text-secondary text-base font-mono text-zinc-200 dark:text-zinc-900">{description}</p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-1 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
