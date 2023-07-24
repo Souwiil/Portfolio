@@ -35,8 +35,7 @@ const About = () => {
                 <p className="text-xl font-space font-semibold uppercase">LANGUAGES:</p>
                 <ul className=" ml-6 list-none">
                 <li className="text-lg font-mono font-bold"> French: <span className="text-gray-500 italic ml-2"> Native</span></li>
-                <li className="text-lg font-mono font-bold">Arabic:<span className="text-gray-500 italic ml-2">Basic</span></li>
-                  <li className="text-lg font-mono font-bold"> Italian:<span className="text-gray-500 italic ml-2">Fluent</span></li>
+                  <li className="text-lg font-mono font-bold"> Italian:<span className="text-gray-500 italic ml-2">Basic</span></li>
                   <li className="text-lg font-mono font-bold">English:<span className="text-gray-500 italic ml-2">Basic</span></li>
                 </ul>
               </div>

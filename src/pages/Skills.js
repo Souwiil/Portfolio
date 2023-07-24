@@ -19,7 +19,7 @@ const Skills = () => {
           {Techno.map((image, index) => (
             <motion.div
               key={index}
-              className="w-24 h-24 lg:w-24 lg:h-24  rounded-full p-2  overflow-hidden mx-2 mb-2"
+              className="w-24 h-24 lg:w-24 lg:h-24   p-2  overflow-hidden mx-2 mb-2"
               variants={fadeIn("up", index * 0.3)}
               initial="hidden"
               whileInView={"show"}
@@ -43,7 +43,7 @@ const Skills = () => {
           {Back.map((image, index) => (
             <motion.div
               key={index}
-              className="w-24 h-24 lg:w-24 lg:h-24 rounded-full p-2  overflow-hidden mx-2 mb-2"
+              className="w-24 h-24 lg:w-24 lg:h-24  p-2  overflow-hidden mx-2 mb-2"
               variants={fadeIn("up", index * 0.4)}
               initial="hidden"
               whileInView={"show"}
@@ -67,7 +67,7 @@ const Skills = () => {
           {Other.map((image, index) => (
             <motion.div
               key={index}
-              className="w-24 h-24 lg:w-24 lg:h-24 rounded-full p-2 overflow-hidden mx-2 mb-2"
+              className="w-24 h-24 lg:w-24 lg:h-24  p-2 overflow-hidden mx-2 mb-2"
               variants={fadeIn("up", index * 0.5)}
               initial="hidden"
               whileInView={"show"}
